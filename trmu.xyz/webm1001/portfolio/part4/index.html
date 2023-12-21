@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Trevin Murray's Web Development Portfolio &amp; other Information." />
+    <meta name="author" content="Trevin Murray" />
+    <title>Trevin Murray</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92c730787e.js" crossorigin="anonymous"></script>
+
+    <script src="js/glide.min.js" charset="utf-8"></script>
+    <link href="css/glide.core.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/glide.theme.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/nav_scroll.js"></script>
+    <script src="js/work_switch.js"></script>
+
+  </head>
+  <body onload="scroll()">
+
+    <header class="navbar">
+      <nav>
+        <ul>
+          <li><a href="#biography"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i></a></li>
+          <li><a href="#portfolio"><i class="fa-solid fa-code"></i></a></li>
+          <li><a href="#work-experience"><i class="fa-solid fa-briefcase"></i></a></li>
+          <li><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </nav>
+    </header> <!-- end .navbar -->
+
+  <!-- =============== Biography ===============  -->
+  <section id="biography">
+    <h1 class="bio-icon"><i class="fa-solid fa-user"></i></h1>
+    <div class="bio-content-container">
+      <div class="bio-left">
+        <div class="name-title-container">
+          <h2>Hey! My name is</h2>
+        </div><!--end .name-title-container -->
+        <div class="name-container">
+          <h1 class="name">Trevin Murray</h1>
+        </div><!-- end .name-container -->
+        <hr>
+        <p>I am a student from northern Utah studying Information Technology and Cybersecurity. Outside of school, I still enjoy experimenting with computers. Technology has always been something that interested me. You can often catch me casually coding, practicing graphic design and video editing, or playing video games. I also enjoy watching and playing basketball, though I am much better at the former.</p>
+      </div><!-- end .bio-left-->
+      <div class="bio-right">
+        <img src="img/portrait_transparent.png" alt="Self Portrait">
+      </div><!--end .bio-right -->
+    </div><!--end .bio-content-container-->
+  </section><!-- end #biography -->
+  <!-- =============== Education ===============  -->
+  <section id="education">
+    <h1><i class="fa-solid fa-graduation-cap edu-icon"></i> Education</h1>
+
+    <div class="edu-container">
+
+      <div class="edu-card edu-hs">
+        <h3><span>Bear River High School</span>Garland, UT</h3>
+        <h4>2020 - Present &bull; Graduating May 2023</h4>
+        <ul>
+          <li>Honors Math 9th - 11th</li>
+          <li>Computer Prgrm I</li>
+          <li>Web Development I & II</li>
+          <li>4.0 GPA</li>
+          <li>Kiwanis Club Student of the Month</li>
+        </ul>
+        
+        <div class="edu-img-container">
+          <img src="img/brhs_logo.png" alt="Bear River High School" width="60px">
+        </div><!-- end .edu-img-container -->
+      </div> <!-- end .edu-card .edu-hs -->
+
+      <div class="edu-card edu-btech">
+        <h3><span>Bridgerland Technical College</span>Brigham City, UT</h3>
+        <h4>2022 - Present &bull; Completing May 2023</h4>
+        <ul>
+          <li>Working towards 900 hour IT and Cybersecurity certificate</li>
+          <li>PC Pro, Net Pro, Sec Pro*</li>
+          <li>Linux Essentials</li>
+          <li>Python</li>
+          <li>Web Development*</li>
+        </ul>
+
+        <div class="edu-img-container">
+          <img src="img/btech_logo.png" alt="Bridgerland Technical College" width="60px">
+        </div><!-- end .edu-img-container -->
+      </div> <!-- end .edu-card .edu-btech -->
+
+      <div class="edu-card edu-usu">
+        <h3><span>Utah State University</span>Logan, UT</h3>
+        <h4>2023 -  &bull; Graduating Fall 2025</h4>
+        <ul>
+          <li>Working towards Associates of Applied Science</li>
+          <li>Working towards Bachelors of Technology Systems with an emphasis in Cybersecurity</li>
+          <li>Presidential Scholarship</li>
+        </ul>
+
+        <div class="edu-img-container"> 
+          <img src="img/usu_logo.png" alt="Utah State University" width="60px">
+        </div><!-- end .edu-img-container -->
+      </div> <!-- end .edu-card .edu-usu -->
+
+    </div><!--end .edu-container-->
+
+  </section><!-- end #education-->
+  <!-- =============== Portfolio ===============  -->
+  <section id="portfolio">
+    <h1><i class="fa-solid fa-code port-icon"></i> Portfolio</h1>
+
+    <div class="portfolio-carousel">
+
+      <div class="glide">
+        <div data-glide-el="track" class="glide__track">
+          <ul class="glide__slides">
+
+            <li class="glide__slide">
+              <div class="glide-card-container bg bg-ether">
+                <div class="gl-ca-info-container">
+                  <div class="gl-ca-info-text-container">
+                    <h2>Ether - Simulated Business</h2>
+                    <h4>HTML, CSS, JS, Graphic and Product Design</h4>
+                    <p>School project to simulate creating a business. Complete website built from the ground up including logo design and a custom "launch" page on loading.</p>
+                  </div><!-- end .gl-ca-info-text-container-->
+                  <div class="gl-ca-info-link">
+                    <a href="https://trmu.xyz/ether" target="_blank"><i class="fa-solid fa-link"></i></a>
+                  </div><!--end .gl-ca-info-link-->
+                </div><!--end .gl-ca-info-container-->
+              </div><!--end .glide-card-container bg bg-ether-->
+            </li>
+
+            <li class="glide__slide">
+              <div class="glide-card-container bg bg-ranked">
+                <div class="gl-ca-info-container">
+                  <div class="gl-ca-info-text-container">
+                    <h2>Ranked - A Rocket League Web Application for Tournaments</h2>
+                    <h4>HTML, CSS, JS, & Graphic Design</h4>
+                    <p>Developed a website to input Rocket League players' ranks and seed them for use in making brackets for private tournaments. Created for the Esports club at my high school.</p>
+                  </div><!-- end .gl-ca-info-text-container-->
+                  <div class="gl-ca-info-link">
+                    <a href="https://trmu.xyz/ranked" target="_blank"><i class="fa-solid fa-link"></i></a>
+                  </div><!--end .gl-ca-info-link-->
+                </div><!--end .gl-ca-info-container-->
+              </div><!--end .glide-card-container bg bg-ranked-->
+            </li>
+
+            <li class="glide__slide">
+              <div class="glide-card-container bg bg-particle">
+                <div class="gl-ca-info-container">
+                  <div class="gl-ca-info-text-container">
+                    <h2>Particle Project</h2>
+                    <h4>HTML, CSS, JS</h4>
+                    <p>A school project to generate particles based on text and allow them to be pushed away by the cursor. I modified it to allow many forms of user input.</p>
+                  </div><!-- end .gl-ca-info-text-container-->
+                  <div class="gl-ca-info-link">
+                    <a href="https://trmu.xyz/particles" target="_blank"><i class="fa-solid fa-link"></i></a>
+                  </div><!--end .gl-ca-info-link-->
+                </div><!--end .gl-ca-info-container-->
+              </div><!--end .glide-card-container bg bg-particle-->
+
+            </li>
+          </ul>
+        </div>
+        
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
+          </div>
+        </div>
+        
+      </div>
+
+    </div><!--end .portfolio-carousel-->
+  </section><!-- end #portfolio-->
+  <!-- =============== Work Exp. ===============  -->
+  <section id="work-experience">
+    <h1><i class="fa-solid fa-briefcase work-icon"></i> Work Experience</h1>
+    <div class="work-container">
+
+      <div class="work-button-container">
+        <button onclick="graphic()" class="work-button button-selected" id="graphic-button">Graphic Design</button>
+        <button onclick="video()" class="work-button" id="video-button">Video Editing</button>
+      </div><!--work-button-container-->
+
+      <div class="work-content-container work-graphic work-use">
+        <div class="work-content-text">
+          <h3>Freelance Graphic Design</h3>
+          <h4>2020 - Present</h4>
+          <p>I do freelance graphic design as a way to improve my skill level. It is usually for friends and family.</p>
+        </div><!--end .work-content-text-->
+        <img src="img/stephen_portrait.png" alt="Custom Stylized Portrait of Stephen Curry" width="240px" class="work-media-img">
+      </div><!-- end .work-content-container work-graphic -->
+
+      <div class="work-content-container work-video">
+        <div class="work-content-text">
+          <h3>Freelance Video Editing</h3>
+          <h4>2019 - Present</h4>
+          <p>I make simple videos, usually for family members. Usually a small "music video" with music and pictures/videos. Below is one made for a school project.</p>
+        </div><!--end .work-content-text-->
+        <iframe class="work-media-video" width="420" height="240" src="https://www.youtube.com/embed/QgN1AsCANrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div><!--end .work-content-container work-video-->
+
+    </div><!-- end .work-container -->
+  </section><!-- end #work-experience-->
+  <!-- =============== Contact ===============  -->
+  <section id="contact">
+    <h1><i class="fa-solid fa-envelope contact-icon"></i> Contact Me</h1>
+
+    <div class="form-container">
+      <h2>Have an inquiry? Get in touch!</h2>
+      <form action="https://formsubmit.co/trevin@trmu.xyz" method="POST">
+        <div class="form-double">
+          <div class="required form-inner" id="contact-fname"><h3>First Name</h3><input type="text" name="fname" placeholder="First Name" required></div>
+          <div class="required form-inner" id="contact-lname"><h3>Last Name</h3><input type="text" name="lname" placeholder="Last Name" required></div>
+        </div><!--end .form-double-->
+        <div class="form-double">
+          <div class="required form-inner" id="contact-email"><h3>Email</h3><input type="email" name="email" placeholder="example@example.com" required></div>
+          <div class="form-inner" id="contact-tel"><h3>Phone Number</h3><input type="tel" name="tel" placeholder="(xxx) xxx-xxxx"></div>
+        </div><!--end .form-double-->
+        <div class="form-single">
+          <div class="required form-inner" id="contact-subject"><h3>Subject</h3><input type="text" name="subject" placeholder="Subject" required></div>
+        </div><!--end .form-single-->
+        <div class="form-single">
+          <div class="required form-inner" id="contact-message"><h3>Message</h3><textarea name="message" placeholder="Your Message" required></textarea></div>
+        </div><!--end .form-single-->
+        <button type="submit">Submit</button>
+      </form> 
+    </div><!--end .form-container-->
+
+
+
+
+    <aside>
+      <a href="https://www.instagram.com/trmu_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+      <a href="https://github.com/imtrmu" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+      <a href="https://discord.com/users/trmu#9821" target="_blank"><i class="fa-brands fa-discord fa-2xl"></i></a>
+      <a href="mailto:trevin@trmu.xyz"><i class="fa-solid fa-square-envelope fa-2xl"></i></a>
+    </aside>
+  </section><!-- end #contact-->
+
+  <footer>
+    <p>&copy; Copyright 2023 &bull; <b>Trevin Murray</b></p>
+  </footer>
+
+
+  <script>
+    new Glide('.glide').mount()
+  </script>
+  </body>
+</html>

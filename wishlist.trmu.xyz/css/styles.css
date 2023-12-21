@@ -1,0 +1,149 @@
+:root {
+    --1: #332d2f;
+    --2: #fff9fb;
+    --3: #1caa99;
+    --4: #093630;
+    --5: #bb0a21;
+}
+
+body {
+    background-color: var(--2);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.title {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 600;
+    color: var(--3);
+    text-shadow: 2px 2px var(--4);
+}
+
+.subtitle {
+    font-family: 'Great Vibes', cursive;
+    color: var(--5);
+}
+
+.accordion-button {
+    background-color: var(--2);
+    color: var(--1);
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+}
+
+.accordion-item {
+    /* border-color: black; */
+    border-left-color: var(--2);
+    border-right-color: var(--2);
+    border-top-color: var(--2);
+}
+
+.accordion-button[aria-expanded="true"] {
+    background-color: var(--1);
+    color: var(--2);
+}
+
+.accordion-body {
+    background-color: var(--2);
+}
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23332d2f'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
+
+  .accordion-button[aria-expanded="true"]:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff9fb'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
+
+.accordion-body img {
+    padding: 10px;
+    height: 100%;
+    /* max-width: 300px; */
+    aspect-ratio: 1/1;
+    border: 5px solid var(--3);
+}
+
+.discount {
+    background-color: var(--5);
+    font-size: small;
+    left: 95%;
+    top: -10%;
+}
+
+@media only screen and (min-width: 800px) {
+    .discount {
+        right: 9ch;
+        top: 50%;
+        left: unset;
+        border: 2px outset var(--5);
+    }
+}
+    
+
+.w-40 {
+    width: 55%;
+    background-color: white;
+}
+
+.link-bar {
+    background-color: var(--3);
+    margin-bottom: 10px;
+}
+
+.link-bar div, .link-bar .h3 {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--2);
+    font-family: 'Roboto Flex', sans-serif;
+    text-decoration: none;
+}
+
+.link-bar:hover {
+    transform: translate(3px, -3px);
+    box-shadow: -3px 3px 0px var(--4);
+}
+
+sup {
+    vertical-align: bottom;
+    position: relative;
+    top: -1.25em;
+    font-size: .6em;
+}
+
+.h5 {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.santa {
+    width: 25%;
+    max-width: 300px;
+    position: absolute;
+    top: -8.75%;
+    left: -2%;
+    /* rotate: 135deg; */
+    z-index: 5;
+    animation-name: santa, santa-wave;
+    animation-duration: 10s, 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes santa {
+    0% {width: 0; left: -10%;}
+    45% {width: 0; left: -10%;}
+    50% {width: 25%; left: -3%;}
+    95% {width: 25%; left: -3%;}
+    100% {width: 0%; left: -10%;}
+}
+@keyframes santa-wave {
+    0% {rotate: 130deg;}
+    50% {rotate: 140deg}
+    100% {rotate: 130deg;}
+}

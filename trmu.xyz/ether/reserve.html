@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ether - Reserve</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="nav-logo-container"></div>
+      <div class="nav" id="nav">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="reserve.html" class="nav-link current" id="current">Reserve</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="merch.html" class="nav-link">Merch</a>
+      </div>
+      <div class="nav" id="nav2">
+        <a href="javascript:void(0)" id="close" class="close" onclick="closeNav()">&times;</a>
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="reserve.html" class="nav-link current" id="current">Reserve</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="merch.html" class="nav-link">Merch</a>
+      </div>
+      <a href="javascript:void(0);" id="open" class="icon" onclick="openNav()">
+        <img src="images/hamburger.png" alt="Open Nav" />
+      </a>
+    </div> 
+
+<main>
+  <a href="cart.html">
+    <div class="cart" id="cart">
+        <div id="cartnum">0</div>
+    </div>
+  </a>
+<h2>Begin Your Journey Today!</h2>
+    <div class="reserve-flex">
+
+      <div class="reserve-container">
+        <img src="images/reserve/leo.png" alt="Low Earth Orbit" />
+        <div class="reserve-bottom">
+            <h4>Low Earth Orbit</h3>
+            <div class="reserve-button" onclick="slide('res-1');" id="res-1"></div>
+        </div>
+        <!-- <div class="res-info"></div> -->
+
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/moon.png" alt="Moon" />
+        <div class="reserve-bottom">
+<h4>Land on the Moon</h4>
+            <div class="reserve-button" onclick="slide('res-2');" id="res-2"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/sun.png" alt="Sun" />
+        <div class="reserve-bottom">
+<h4>Orbit the Sun</h4>
+            <div class="reserve-button" onclick="slide('res-3');" id="res-3"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/mercury.png" alt="Mercury" />
+        <div class="reserve-bottom">
+<h4>Land on Mercury</h4>
+            <div class="reserve-button" onclick="slide('res-4');" id="res-4"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/venus.png" alt="Venus" />
+        <div class="reserve-bottom">
+<h4>Land on Venus</h4>
+            <div class="reserve-button" onclick="slide('res-5');" id="res-5"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/mars.png" alt="Mars" />
+        <div class="reserve-bottom">
+<h4>Land on Mars</h4>
+            <div class="reserve-button" onclick="slide('res-6');" id="res-6"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/jupiter.png" alt="Jupiter" />
+        <div class="reserve-bottom">
+<h4>Orbit Jupiter</h4>
+            <div class="reserve-button" onclick="slide('res-7');" id="res-7"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/saturn.png" alt="Saturn" />
+        <div class="reserve-bottom">
+<h4>Orbit Saturn</h4>
+            <div class="reserve-button" onclick="slide('res-8');" id="res-8"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/uranus.png" alt="Uranus" />
+        <div class="reserve-bottom">
+<h4>Orbit Uranus</h4>
+            <div class="reserve-button" onclick="slide('res-9');" id="res-9"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/neptune.png" alt="Neptune" />
+        <div class="reserve-bottom">
+<h4>Orbit Neptune</h4>
+            <div class="reserve-button" onclick="slide('res-10');" id="res-10"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/enceladus.png" alt="Enceladus" />
+        <div class="reserve-bottom">
+<h4>Land on Enceladus</h4>
+            <div class="reserve-button" onclick="slide('res-11');" id="res-11"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container">
+        <img src="images/reserve/europa.png" alt="Europa" />
+        <div class="reserve-bottom">
+<h4>Land on Europa</h4>
+            <div class="reserve-button" onclick="slide('res-12');" id="res-12"></div>
+        </div>
+      </div>
+
+      <div class="reserve-container" id="wide">
+        <img src="images/reserve/fullSystem.png" alt="Full System" />
+        <div class="reserve-bottom">
+<h4>Full System Tour (Including Pluto!)</h4>
+            <div class="reserve-button" onclick="slide('res-13');" id="res-13"></div>
+        </div>
+      </div>
+
+
+    </div>
+</main>
+    <!-- <div style="font-size: 200px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, ab ducimus natus id dolore sapiente voluptate laborum suscipit quia animi eveniet ex quidem commodi rerum laboriosam excepturi deleniti corrupti quas.
+    </div> -->
+
+    <div class="footer">
+      <div class="copyright">ETHER &copy; 2072</div>
+      <div class="social-container">
+        <a href=""><img src="images/social/instagram.png" alt="Instagram" class="social" /></a>
+        <a href=""><img src="images/social/youtube.png" alt="YouTube" class="social" /></a>
+        <a href=""><img src="images/social/twitter.png" alt="Twitter" class="social" /></a>
+      </div>
+    </div>
+  </body>
+</html>

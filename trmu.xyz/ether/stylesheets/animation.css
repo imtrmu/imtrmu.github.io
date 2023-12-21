@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+/* 
+font-family: 'Source Code Pro', monospace;
+*/
+
+:root {
+    --dgray: #414545;
+    --gray: #586465;
+    --white: #E8E8E8;
+    --orange: #F7711E;
+    --blue: #266C72;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--gray);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+/* ======================================
+                Rocket Style
+====================================== */
+#all {
+    height: 40%;
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    /* filter: drop-shadow(0px 0px  40px rgba(255, 255, 255, 0.596)); */
+}
+/* #a {
+    fill: black;
+}
+#center-thrust {
+    fill: var(--blue)
+}
+#rocket-body {
+    fill: var(--blue)
+}
+#left-thrust {
+    fill: var(--blue);
+}
+#right-thrust {
+    fill: var(--blue);
+}
+#dot {
+    fill: var(--blue);
+} */
+/* ======================================
+                Button Style
+====================================== */
+.button {
+    opacity: 0;
+}
+a {
+    cursor: pointer;
+}
+div {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(180, 0, 0);
+    /* background-image: radial-gradient(rgb(196, 0, 0) 65%, rgb(175, 0, 0) 35%); */
+    font-family: 'Source Code Pro', monospace;
+    font-size:calc(36px + 2.5vw);
+    padding: .3em 1em;
+    border-radius: .5em;
+    box-shadow: -.1em .15em 0 0 hsla(0, 100%, 17%, 1);
+    border: .05em solid hsla(0, 100%, 17%, 1);
+    aspect-ratio: 3;
+    min-width: 200px;
+    color: black;
+}
+div:active {
+    left: 49.5%;
+    top: 71.5%;
+    box-shadow: -.01em .02em 0 0 hsla(0, 100%, 17%, 1);
+    transition-timing-function: linear;
+    transition-duration: 2s;
+    transition-property: left, top, box-shadow;
+}
+/* ======================================
+                First-Rocket
+====================================== */
+#all {
+    animation: first-rocket 3s cubic-bezier(.54,.16,.5,1.17) 0s 1 normal forwards;
+}
+
+@keyframes first-rocket {
+    0% {top: 150%;}
+    100% {top: 35%;}
+}
+/* ======================================
+                Make button appear
+====================================== */
+.button {
+    animation-name: button-appear;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes button-appear {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+/* ======================================
+                Rocket Launch
+====================================== */
+@keyframes launch {
+    0% {top: 35%}
+    100% {top: -100%;}
+}
+
+/* ======================================
+                iFrame
+====================================== */
+iframe {
+    border: none;
+    position: absolute;
+    width: calc(100vw + 1px);
+    left: -1px;
+    height: 100vh;
+    animation: appear 3s cubic-bezier(.5, -.2, 0, 1) 0s 1 normal forwards;
+}
+@keyframes appear {
+    0% {top: 200%;}
+    100% {top: 0;}
+}
+/* ======================================
+                Button Hover
+====================================== */
+a:hover p {
+    color: white;
+    text-shadow: 0 0 15px #ffd7d7;
+    transition-property: color, text-shadow;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+a:hover div {
+    background-color: rgb(233, 0, 0);
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    transition-property: background-color;
+}
+body {
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}

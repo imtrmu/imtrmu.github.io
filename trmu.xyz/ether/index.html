@@ -1,0 +1,117 @@
+<!-- https://htmlcheatsheet.com/css/  -->
+<!-- https://cubic-bezier.com/#.17,.67,.83,.67 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ether</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+
+      // Wait for the page to load first
+      window.onload = function() {
+
+        //Get a reference to the link on the page
+        // with an id of "mylink"
+        var a = document.getElementById("button");
+
+        //Set code to run when the link is clicked
+        // by assigning a function to "onclick"
+        a.onclick = function() {
+          document.getElementById("all").style.animation = "launch 5s cubic-bezier(.4,-0.3,0,1.31) 0s 1 normal forwards";
+          var x = document.createElement("IFRAME");
+          x.setAttribute("src", "home.html");
+          x.setAttribute("class", "homeIFrame");
+          document.body.appendChild(x);
+          return false;
+        }
+      }
+  </script>
+  </head>
+  <body id="body" class="animation">
+    <?xml version="1.0" encoding="UTF-8"?><svg
+      id="all"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 250.8 643.62"
+    >
+      <defs>
+        <style>
+          .b {
+            fill: #f37126;
+          }
+        </style>
+      </defs>
+      <rect
+        class="b"
+        id="center-thrust"
+        x="108.15"
+        y="384.62"
+        width="30.31"
+        height="259"
+        rx="15.16"
+        ry="15.16"
+      />
+      <path
+        class="b"
+        id="rocket-body"
+        d="M0,347.47c0-21.65,2.61-43.91,11.22-58.38,5.93-9.97,12.23-18.52,17.79-26.07,5.18-7.05,12.3-16.7,12.71-20.11-.01-8.63-.2-17.23-.39-25.72-1.41-63.05-2.75-122.6,71.2-204.58L123.92,0l11.54,12.47c75.86,82.03,74.54,141.65,73.04,204.74-.19,8.48-.39,17.08-.39,25.86,.46,3.21,7.71,12.8,12.99,19.81,5.7,7.54,12.16,16.1,18.24,26.06,13.7,22.49,12.21,64.74,10.12,87.92-1.08,11.97-11,21.02-23.07,21.02h-47.69c-8.57,0-15.52-6.95-15.52-15.52h0c0-8.57,6.95-15.52,15.52-15.52h40.42c1.93-28.39-.42-52.16-6.27-61.73-5.28-8.65-11.25-16.55-16.51-23.52-10.77-14.26-19.27-25.51-19.27-38.52,0-9.03,.2-17.86,.4-26.58,1.26-55.54,2.38-103.91-53.25-169.89-54.18,65.95-53.06,114.34-51.85,169.9,.2,8.72,.39,17.55,.39,26.57,0,12.9-8.28,24.14-18.75,38.36-5.13,6.97-10.95,14.87-16.11,23.53-5.72,9.61-8.05,33.45-6.14,61.87h34.5c8.57,0,15.52,6.95,15.52,15.52h0c0,8.57-6.95,15.52-15.52,15.52H24.45c-11.97,0-22.01-9.08-23.06-21C.59,367.81,0,357.71,0,347.47Z"
+      />
+      <rect
+        class="b"
+        id="left-thrust"
+        x="35.21"
+        y="424.56"
+        width="30.31"
+        height="162.1"
+        rx="15.16"
+        ry="15.16"
+      />
+      <rect
+        class="b"
+        id="right-thrust"
+        x="175.31"
+        y="424.56"
+        width="30.31"
+        height="162.1"
+        rx="15.16"
+        ry="15.16"
+      />
+      <circle
+        class="b"
+        id="dot"
+        cx="125.43"
+        cy="174.96"
+        r="16.24"
+        transform="translate(-86.97 139.94) rotate(-45)"
+      />
+    </svg>
+    <a href="#" onclick="launch()" id="button">
+    <div class="button buttondiv">
+        <p class="button">LAUNCH</p>
+    </div>
+  </a>
+<!-- <script>
+  function launch() {
+    document.getElementById("all").style.animation = "launch 5s cubic-bezier(.4,-0.3,0,1.31) 0s 1 normal forwards";
+    var x = document.createElement("IFRAME");
+    x.setAttribute("src", "tshirt/index.html");
+    document.body.appendChild(x);
+  }
+</script> -->
+<script>
+  const button = document.getElementById('button')
+const body = document.getElementById('body')
+button.addEventListener('mouseover', () => body.style.backgroundColor = "#414545")
+button.addEventListener('mouseleave', () => body.style.backgroundColor = "#586465")
+</script>
+  </body>
+</html>
+<!-- var delayInMilliseconds = 3500;
+
+setTimeout(function() {
+  window.location.replace("https://google.com");
+}, delayInMilliseconds); -->
+
+<!-- <button type="button" class="button" onclick="launch()" id="button"> -->

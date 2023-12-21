@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ether - Merch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+    <div class="head">
+        <div class="nav-logo-container"></div>
+        <div class="nav" id="nav">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="reserve.html" class="nav-link">Reserve</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="careers.html" class="nav-link">Careers</a>
+            <a href="merch.html" class="nav-link current" id="current">Merch</a>
+        </div>
+        <div class="nav" id="nav2">
+            <a
+                href="javascript:void(0)"
+                id="close"
+                class="close"
+                onclick="closeNav()"
+                >&times;</a
+            >
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="reserve.html" class="nav-link">Reserve</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="careers.html" class="nav-link">Careers</a>
+            <a href="merch.html" class="nav-link current" id="current">Merch</a>
+        </div>
+        <a
+            href="javascript:void(0);"
+            id="open"
+            class="icon"
+            onclick="openNav()"
+        >
+            <img src="images/hamburger.png" alt="Open Nav" />
+        </a>
+    </div>
+    <form action="mailto:#" method="post" enctype="text/plain">
+        <fieldset id="banner">
+            <img src="images/MerchBanner.png" alt="banner" id="bannerImg">
+        </fieldset>
+        <fieldset id="designs">
+            <div id="designContainer">
+            <div class="imageContainer">
+                <label class="merchImg IconAshOrange" for="IAO"></label>
+                <input type="radio" name="shirtChoice" value="IconAshOrange" id="IAO" required>
+            </div>
+            <div class="imageContainer">
+                <label class="merchImg LogoAshOrange" for="LAO"></label>
+                <input type="radio" name="shirtChoice" value="LogoAshOrange" id="LAO">
+            </div>
+            <div class="imageContainer">
+                <label class="merchImg LogoGrayWhite" for="LGW"></label>
+                <input type="radio" name="shirtChoice" value="LogoGrayWhite" id="LGW">
+            </div>
+            <div class="imageContainer">
+                <label class="merchImg IconGrayWhite" for="IGW"></label>
+                <input type="radio" name="shirtChoice" value="IconGrayWhite" id="IGW">
+            </div>
+            </div>
+            <div class="tooltip">
+                <img src="images/infoIcon.png" alt="info" class="info"><sup>*</sup>
+                <span class="tooltiptext">Select the design you want.</span>
+            </div>
+            </fieldset>
+            <fieldset id="size-and-accessories">
+                <div class="s-qContainer">
+                    <h3>Size:</h3>
+                    <select name="size" required>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">X-Large</option>
+                    </select>
+                    <sup>*</sup>
+                    <h3>Quantity:</h3> 
+                    <input type="number" name="quantity" min="0" max="99" value="1" required title="1-99">
+                    <sup>*</sup>
+                </div>
+                <div class="aContainer">
+                    <h3 id="accessoriesHeader">Accessories:</h3>
+                    <div class="accessoryContainer">
+                        <label for="hat">Hat</label>
+                        <input type="checkbox" name="accessories" value="Hat" id="hat">
+                    </div>
+                    <div class="accessoryContainer">
+                        <label for="waterbottle">Water Bottle</label>
+                        <input type="checkbox" name="accessories" value="Waterbottle" id="waterbottle"></div>
+                    <div class="accessoryContainer">
+                        <label for="backpack">Backpack</label>
+                        <input type="checkbox" name="accessories" value="Backpack" id="backpack">
+                    </div>
+                    <div class="accessoryContainer">
+                        <label for="sticker">Sticker</label>
+                        <input type="checkbox" name="accessories" value="Sticker" id="sticker">
+                    </div>
+                </div>
+                <div class="tooltip">
+                    <img src="images/infoIcon.png" alt="info" class="info">
+                    <span class="tooltiptext" id="tttext2">
+                        <div class="tooltipimgcontainer">
+                            <img src="images/hat.jpg" alt="Hat"  class="tooltipimg">
+                            <img src="images/waterbottle.jpg" alt="Water Bottle" class="tooltipimg">
+                            <img src="images/backpack.jpg" alt="Backpack" class="tooltipimg">
+                            <img src="images/sticker.jpg" alt="Sticker" class="tooltipimg">
+                        </div>
+                    </span>
+                </div>
+            </fieldset>
+            <fieldset id="info">
+                <legend>Personal Information</legend>
+                <div class="infoContainer">
+                    <h3>Full Name:</h3>
+                    <div>
+                        <input type="text" size="20" name="fullname" placeholder="John Doe" required>
+                        <sup>*</sup>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <h3>Address:</h3>
+                    <div>
+                        <input type="text" size="20" name="address" placeholder="123 Main St." required>
+                        <sup>*</sup>
+                    </div>
+                </div>
+                <div class="infoContainer">
+                    <h3>City:</h3>
+                    <div>
+                        <input type="text" size="20" name="city" placeholder="Whoville" required>
+                        <sup>*</sup>
+                    </div>
+                </div>
+                <div class="statezipcontainer">
+                    <div class="infoContainer state">
+                        <h3>State:</h3>
+                        <div>
+                            <select name="state">
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                            <sup>*</sup>
+                        </div>
+                    </div >
+                    <div class="infoContainer zip">
+                        <h3>Zip:</h3>
+                        <div>
+                            <input type="text" name="zip" size="1" maxlength="5" id="zip" placeholder="10001"required>
+                            <sup>*</sup>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="payment">
+                <legend>Payment Information</legend>
+                <div class="infoContainer card">
+                    <h3>Card Number:</h3>
+                    <div>
+                        <input type="text" id="cc" value="" size="20" name="cardNumber" placeholder="1234-1234-1234-1234" maxlength="20" required>
+                        <sup>*</sup> 
+                    </div>
+                </div>
+                <script>
+                    function cc_format(value) {
+                        var v = value.replace(/\s+/g, '').replace(/[^0-9]/gi, '')
+                        var matches = v.match(/\d{4,16}/g);
+                        var match = matches && matches[0] || ''
+                        var parts = []
+                        for (i=0, len=match.length; i<len; i+=4) {
+                            parts.push(match.substring(i, i+4))
+                        }
+                        if (parts.length) {
+                            return parts.join('-')
+                        } else {
+                            return value
+                        }
+                    }
+            
+                    onload = function() {
+                        document.getElementById('cc').oninput = function() {
+                            this.value = cc_format(this.value)
+                        }
+                    }
+                </script>
+                <div class="cardinfocontainer">
+                    <div class="infoContainer company">
+                        <h3>Card Company:</h3>
+                        <div>
+                            <select name="cardCompany">
+                                <option value="Visa">Visa</option>
+                                <option value="MasterCard">Master Card</option>
+                                <option value="Discover">Discover</option>
+                                <option value="AmericanExpress">American Express</option>
+                            </select>
+                            <sup>*</sup>
+                        </div>
+                    </div>
+                    <div class="infoContainer exp">
+                        <h3>Exp Date:</h3>
+                        <div>
+                            <input type="month" name="exp" placeholder="yyyy-mm" id="exp" required>
+                            <sup>*</sup>
+                        </div>
+                    </div>
+                    <div class="infoContainer cvv">
+                        <h3>CVV:</h3>
+                        <div>
+                            <input type="text" name="cvv" placeholder="123" maxlength="4" id="cvv" required>
+                            <sup>*</sup>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+    </form>
+    <div class="footer">
+        <div class="copyright">ETHER &copy; 2072</div>
+        <div class="social-container">
+            <a href=""><img src="images/social/instagram.png" alt="Instagram" class="social" /></a>
+            <a href=""><img src="images/social/youtube.png" alt="YouTube" class="social" /></a>
+            <a href=""><img src="images/social/twitter.png" alt="Twitter" class="social" /></a>
+        </div>
+    </div>
+</body>
+</html>
+
+            <!-- <input type="range" value="1" min="0" max="9999999999999999" oninput="this.nextElementSibling.value = this.value">
+            <output>0</output> -->

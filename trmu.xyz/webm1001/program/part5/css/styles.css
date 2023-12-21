@@ -1,0 +1,507 @@
+/* =========================== Global ============================  */
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figcaption {
+    font-family: "Orbitron", sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ======================= Nav Bar ============================== */
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #424949;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    display: block;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #3b5998;
+}
+
+/* ============================= Hero ================================= */
+
+#hero {
+    background-image: url(../img/rocket.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: table;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-text {
+    display: table-cell;
+    color: white;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+/* ============================ Students ================================ */
+
+#students {
+    width: 75%;
+    margin: 50px auto;
+}
+
+#students h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* ========================= What will you learn ========================== */
+
+#learn {
+    background-image: url(../img/learn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.learn-header {
+    text-align: center;
+    background-color: #424949;
+    color: white;
+    height: 60px;
+    width: 100%;
+    margin: 0px;
+    display: table;
+    vertical-align: middle;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-box {
+    border: solid;
+    border-color: #3b5998;
+    background-color: rgba(44, 66, 80, 0.5);
+    height: 400px;
+    width: 325px;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.icon-box {
+    display: table;
+    margin: 50px auto;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.icon-box i {
+    display: table-cell;
+    margin: auto;
+    font-size: 150px;
+    text-align: center;
+    vertical-align: middle;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+#learn figcaption {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: -80px 0 0 -160px;
+    font-size: 30px;
+    color: white;
+}
+
+.html {
+    background-color: #e34f26;
+}
+
+.css {
+    background-color: #3b5998;
+}
+
+.database {
+    background-color: #f29211;
+}
+
+.php {
+    background-color: #8892be;
+}
+
+.js {
+    background-color: #f7df1e;
+}
+
+.mobile {
+    background-color: #a4c639;
+}
+
+.menu-box p {
+    margin: 60px 10px 0px 10px;
+    color: white;
+}
+
+/* ========================== program features ========================== */
+
+#features {
+    margin-top: 50px;
+}
+
+#features h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.features-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 0;
+    padding: 0;
+}
+
+.features-grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.features-grid-item i {
+    font-size: 5em;
+}
+
+/* ======================== instructors ========================= */
+
+#instructors {
+    background-image: url(../img/instructors-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px;
+}
+
+#instructors h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+#instructors .sub-header {
+    text-align: center;
+    color: white;
+}
+
+.instructor-card {
+    color: white;
+    width: 100%;
+    margin: 50px auto;
+    border: solid;
+    border-color: #3b5998;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    text-align: left;
+}
+
+.instructor-card-img {
+    grid-area: img;
+}
+
+.instructor-card-header {
+    grid-area: head;
+}
+
+.instructor-card-profile {
+    grid-area: pro;
+}
+
+.instructor-card-description {
+    grid-area: des;
+}
+
+.instructor-card {
+    display: grid;
+    grid-template-areas:
+        'img img head head head head'
+        'img img pro pro pro pro'
+        'img img des des des des';
+    grid-gap: 10px;
+    grid-template-rows: 20px 40px auto;
+}
+
+.instructor-card-middle {
+    width: 400px;
+    margin: 0px auto;
+    padding: 0 50px;
+    border: solid;
+    border-color: #3b5998;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 20px;
+}
+
+.instructor-card-middle {
+    display: grid;
+    grid-template-areas:
+        'head head head head'
+        'pro pro pro pro'
+        'img img img img'
+        'des des des des';
+    grid-gap: 10px;
+    grid-template-rows: 20px 60px auto;
+}
+
+.middle-card-align {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* ======================= video ======================== */
+
+#video {
+    text-align: center;
+    background-image: url(../img/intro-video-background.jpg);
+    height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#video h2 {
+    padding: 25px 0px;
+    background-color: #424949;
+    color: white;
+    margin-top: -20px;
+}
+
+#video iframe {
+    padding: 50px 0px;
+}
+
+/* =========================== call to action =============================== */
+
+#action {
+    text-align: center;
+}
+
+#action h2 {
+    padding: 90px 0px 25px 0px;
+}
+
+#action button {
+    background-color: #3b5998;
+    border: none;
+    padding: 15px 100px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 30px auto 60px auto;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#action button:hover {
+    background-color: #424949;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .25), 0 17px 50px 0 rgba(0, 0, 0, .20);
+}
+
+/* =============================== Footer ====================== */
+
+footer {
+    background-color: #424949;
+    color: white;
+    padding: 25px 0px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    margin: 25px auto;
+    padding: 0;
+    overflow: hiden;
+    text-align: center;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    background-color: #3b5998;
+}
+
+footer p {
+    margin: 30px auto;
+    text-align: center;
+}
+
+footer hr {
+    border: 0;
+    height: 1px;
+    background: white;
+    background-image: linear-gradient(to right, #424949, white, #424949);
+}
+
+/* =========================== Contact Page ============================= */
+
+.container-contact-outer {
+    background-image: url(../img/contact-background.jpg);
+    color: white;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 5% 0;
+    color: white;
+
+}
+
+.vertical-hr hr {
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%, 100);
+    height: 40vh;
+    width: 1px;
+}
+
+.vertical-hr {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form .name-first {
+    grid-area: fname;
+}
+
+.contact-form .name-last {
+    grid-area: lname;
+}
+
+.contact-form .email {
+    grid-area: email;
+}
+
+.contact-form .phone {
+    grid-area: phone;
+}
+
+.contact-form .message {
+    grid-area: message;
+}
+
+.contact-form button {
+    grid-area: button;
+}
+
+.contact-form {
+    display: grid;
+    justify-items: center;
+    justify-content: left;
+    grid-template-areas:
+        'fname lname'
+        'email phone'
+        'message message'
+        'button button'
+    ;
+    grid-gap: 30px;
+}
+
+.contact-form input {
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    min-width: 250px;
+    height: 50px;
+}
+
+.contact-form textarea {
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    min-width: 550px;
+    height: 150px;
+}
+
+.contact-form ::placeholder {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.contact-form button {
+    height: 30px;
+    width: 200px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.contact-form button:hover {
+    background: rgba(255, 255, 255, .5);
+    color: black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}

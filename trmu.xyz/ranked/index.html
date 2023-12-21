@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rank[ed]</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <script src="js/ranked.js"></script>
+  </head>
+  <body>
+    <div class="divMain" id="main">
+      <p id="bracketLink">
+        <a href="https://challonge.com/tournament/bracket_generator" target="_blank">^</a>
+      </p>
+      <div class="title">
+        <img src="RankedLogo.png" alt="Rank[ed]" id="titleImg" />
+        <h1>
+          Input your ranks below! To find them go
+          <a href="https://rocketleague.tracker.network" target="_blank">here</a>.
+        </h1>
+      </div>
+      <form class="" action="index.html" method="post">
+        <input type="text" name="array[]" value="" placeholder="Name/Username" />
+        <div class="vbr"></div>
+        <label>1s</label>
+        <select name="array[]">
+          <option value="0" selected>Unranked</option>
+          <option value="1">Bronze 1</option>
+          <option value="2">Bronze 2</option>
+          <option value="3">Bronze 3</option>
+          <option value="4">Silver 1</option>
+          <option value="5">Silver 2</option>
+          <option value="6">Silver 3</option>
+          <option value="7">Gold 1</option>
+          <option value="8">Gold 2</option>
+          <option value="9">Gold 3</option>
+          <option value="10">Platinum 1</option>
+          <option value="11">Platinum 2</option>
+          <option value="12">Platinum 3</option>
+          <option value="13">Diamond 1</option>
+          <option value="14">Diamond 2</option>
+          <option value="15">Diamond 3</option>
+          <option value="16">Champion 1</option>
+          <option value="17">Champion 2</option>
+          <option value="18">Champion 3</option>
+          <option value="19">Grand Champion 1</option>
+          <option value="20">Grand Champion 2</option>
+          <option value="21">Grand Champion 3</option>
+          <option value="22">Supersonic Legend</option>
+        </select>
+        <div class="vbr"></div>
+        <label>2s</label>
+        <select name="array[]">
+          <option value="0" selected>Unranked</option>
+          <option value="1">Bronze 1</option>
+          <option value="2">Bronze 2</option>
+          <option value="3">Bronze 3</option>
+          <option value="4">Silver 1</option>
+          <option value="5">Silver 2</option>
+          <option value="6">Silver 3</option>
+          <option value="7">Gold 1</option>
+          <option value="8">Gold 2</option>
+          <option value="9">Gold 3</option>
+          <option value="10">Platinum 1</option>
+          <option value="11">Platinum 2</option>
+          <option value="12">Platinum 3</option>
+          <option value="13">Diamond 1</option>
+          <option value="14">Diamond 2</option>
+          <option value="15">Diamond 3</option>
+          <option value="16">Champion 1</option>
+          <option value="17">Champion 2</option>
+          <option value="18">Champion 3</option>
+          <option value="19">Grand Champion 1</option>
+          <option value="20">Grand Champion 2</option>
+          <option value="21">Grand Champion 3</option>
+          <option value="22">Supersonic Legend</option>
+        </select>
+        <div class="vbr"></div>
+        <label>3s</label>
+        <select name="array[]">
+          <option value="0" selected>Unranked</option>
+          <option value="1">Bronze 1</option>
+          <option value="2">Bronze 2</option>
+          <option value="3">Bronze 3</option>
+          <option value="4">Silver 1</option>
+          <option value="5">Silver 2</option>
+          <option value="6">Silver 3</option>
+          <option value="7">Gold 1</option>
+          <option value="8">Gold 2</option>
+          <option value="9">Gold 3</option>
+          <option value="10">Platinum 1</option>
+          <option value="11">Platinum 2</option>
+          <option value="12">Platinum 3</option>
+          <option value="13">Diamond 1</option>
+          <option value="14">Diamond 2</option>
+          <option value="15">Diamond 3</option>
+          <option value="16">Champion 1</option>
+          <option value="17">Champion 2</option>
+          <option value="18">Champion 3</option>
+          <option value="19">Grand Champion 1</option>
+          <option value="20">Grand Champion 2</option>
+          <option value="21">Grand Champion 3</option>
+          <option value="22">Supersonic Legend</option>
+        </select>
+        <button type="reset" name="button" reset onclick="grab()">Submit</button>
+      </form>
+      <!-- <div>
+        <h2>WAD</h2>
+        <div class="vbr"></div>
+        <img src="rankIcons/1.png" /><img src="rankIcons/1.png" /><img src="rankIcons/1.png" />
+        <h2>NUM</h2>
+      </div> -->
+      <div class="playerListTop">
+        <h1 class="pl1">Player</h1>
+        <div class="vbr"></div>
+        <h1 class="pl2">1s</h1>
+        <div class="vbr"></div>
+        <h1 class="pl2">2s</h1>
+        <div class="vbr"></div>
+        <h1 class="pl2">3s</h1>
+        <div class="vbr"></div>
+        <h1 class="pl3">Rating</h1>
+      </div>
+      <div id="playerListBottom"></div>
+    </div>
+  </body>
+</html>
