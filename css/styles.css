@@ -936,5 +936,7 @@ footer b:hover {
 }
 
   .outdated {
-    font-size: .5em;
+    padding-left: 70px;
+    padding-top: 0px;
+    margin-top: -20px;
 }
