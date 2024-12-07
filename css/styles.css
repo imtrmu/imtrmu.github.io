@@ -404,10 +404,11 @@ hr {
 
 /* ====================| Certifications |==================== */
 #certifications {
-  background-color: var(--wh);
+  background-color: var(--primary);
   width: 100%;
   display: flex;
   justify-content: center;
+
 }
 
 .cert-container {
@@ -425,6 +426,10 @@ hr {
   /* height: 200px; */
   max-width: 200px;
   /* margin-inline: 3%; */
+  background-color: var(--wh);
+  padding: 15px;
+  border: 5px solid var(--jet);
+  border-radius: 15px;
 }
 
 /* ====================| Portfolio |==================== */
